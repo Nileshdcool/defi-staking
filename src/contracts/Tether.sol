@@ -17,7 +17,7 @@ contract Teather {
       balanceOf[msg.sender] = totalSupply;
    }
 
-   function tranfer(address _to, uint _value) public returns(bool success)
+   function transfer(address _to, uint _value) public returns(bool success)
    {
       require(balanceOf[msg.sender] >= _value);
       balanceOf[msg.sender] -= _value;
