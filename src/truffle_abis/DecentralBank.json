@@ -28,8 +28,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -42,8 +41,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -56,8 +54,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -70,8 +67,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract RWD\",\"name\":\"_rwd\",\"type\":\"address\"},{\"internalType\":\"contract Teather\",\"name\":\"_teather\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"rwd\",\"outputs\":[{\"internalType\":\"contract RWD\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"teather\",\"outputs\":[{\"internalType\":\"contract Teather\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/DecentralBank.sol\":\"DecentralBank\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/DecentralBank.sol\":{\"keccak256\":\"0xda5e2117faef241c3140a50847c39b10bcc1c0110994bf920362daa5d718630b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://29bd1ec0fc858aac7a3cee887d03f73bf23daad5f1b2420620775bad4a8e722b\",\"dweb:/ipfs/QmcEL7GReeQm478KCrVKjyQGPoQbHDH757ByifS4fFWp4i\"]},\"project:/src/contracts/RWD.sol\":{\"keccak256\":\"0x216285d39dbc44e638e885b407765b05f699a833bd91ebe4781f13a55d407ec3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5f03032f5a90dacedde9ff21f614c2876ea6db1ca71d8cf6b705dda9d55416c7\",\"dweb:/ipfs/QmRDyoA2y4SHhdcUedhVS1SCZNHpPziWiZqrWvfsTMePVJ\"]},\"project:/src/contracts/Tether.sol\":{\"keccak256\":\"0x5562111005fba8374a7218f46360290e75ad5d24c4d99625e1562db229dfbc8f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3166fd1f637f3a8341ca1663a4dc78af4b3c115ebd9708be7f83dbd860b00e76\",\"dweb:/ipfs/QmT5nyHA5V4vz9MV6Svss7u9pu9GbrrvsZrdMJTYR8m54Y\"]}},\"version\":1}",
@@ -4117,8 +4113,7 @@
     }
   },
   "schemaVersion": "3.4.6",
-  "updatedAt": "2022-05-16T02:08:34.791Z",
-  "networkType": "ethereum",
+  "updatedAt": "2022-05-16T02:58:56.103Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
