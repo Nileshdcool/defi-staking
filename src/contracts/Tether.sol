@@ -32,13 +32,15 @@ contract Teather {
       return true;
    }
 
-   function transferFrom(address _from, address _to, uint _value) public returns(bool) {
-      require(_value <= balanceOf[_from]);
-      require(_value <= allowance[_from][msg.sender]);
-      // add the balance for transfer from 
-      balanceOf[_to] += _value;
-      allowance[msg.sender][_from] -= _value;
-      emit Tranfer(_from, _to, _value);
-      return true;
-   }
+   function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+        require(_value <= balanceOf[_from]);
+        require(_value <= allowance[_from][msg.sender]);
+        // add the balance for transferFrom
+        balanceOf[_to] += _value;
+        // subtract the balance for transferFrom
+        balanceOf[_from] -= _value;
+        allowance[_from][msg.sender] -= _value;
+        emit Tranfer(_from, _to, _value);
+        return true;
+    }
 }
