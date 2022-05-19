@@ -19,7 +19,7 @@ module.exports = async function (deployer, network, accounts) {
     await rwd.transfer(decentralBank.address, '1000000000000000000000000');
 
     // distribute 100 Teather tokens to investor
-    await teather.transfer(accounts[1], '1000000000000000000');
+    await teather.transfer(accounts[1], '100000000000000000000');
 }
 
 

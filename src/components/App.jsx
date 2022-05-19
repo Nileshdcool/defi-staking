@@ -5,6 +5,7 @@ import Web3 from 'web3';
 import Teather from '../truffle_abis/Teather.json';
 import RWD from '../truffle_abis/RWD.json';
 import DecentralBank from '../truffle_abis/DecentralBank.json';
+import Main from './Main'
 
 class App extends Component {
 
@@ -49,7 +50,7 @@ class App extends Component {
         if (rwdData) {
             const reward = new web3.eth.Contract(RWD.abi, rwdData.address);
             let rwdBalance = await reward.methods.balanceOf(this.state.account).call();
-            this.setState({ rwd:reward, rwdBalance: rwdBalance.toString() });
+            this.setState({ rwd: reward, rwdBalance: rwdBalance.toString() });
             console.log(rwdBalance);
         } else {
             window.alert('Error! No reward contract deployed');
@@ -66,7 +67,7 @@ class App extends Component {
             window.alert('Error! No Decentral Bank contract deployed');
         }
 
-        this.setState({loading:false})
+        this.setState({ loading: false })
 
     }
 
@@ -85,10 +86,28 @@ class App extends Component {
     }
     // our react app code goes here
     render() {
+        let content;
+        {
+            this.state.loading ?
+                content = <p id="loader" className="text-center" style={{ margin: '30px' }}>
+                    Loading Page...</p> : content =
+                <Main teatherBalance={this.state.tetherBalance}
+                    rwdBalance={this.state.rwdBalance}
+                    stakingBalance={this.state.stakingBalance}
+                />
+        }
         return (
             <>
                 <Navbar account={this.state.account}></Navbar>
-                <h1>{this.state.loading}</h1>
+                <div className="container-fluid mt-5">
+                    <div className="row">
+                        <main role="main" className="col-lg-12 ml-auto mr-auto" style={{ maxWidth: '600px' }} style={{ minHeight: '100vm' }}>
+                            <div>
+                                <>{content}</>
+                            </div>
+                        </main>
+                    </div>
+                </div>
             </>
         )
     }
